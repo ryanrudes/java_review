@@ -155,3 +155,21 @@ double e = 2.71828182845904523; // Good. Taking advantage of that extra precisio
 char myFavoriteLetter = 'a';
 char someCharacter = 46; // This assigns whatever character corresponds to 46 according to the 16-bit Unicode (UTF-16) system.
 ```
+
+### Declaration
+
+Declarations are when we *declare* a variable without *defining* it, that is, creating a variable with a certain name, but not yet assignment it any value. Here's the syntax for a declarative statement:
+```java
+<type> <variable name>;
+```
+It's important that your variable names are approperiate and descriptive, but not too long. For example:
+```java
+byte redComponent; // The red component of an RGB pixel, some number between (0-255)
+short pumpkinsSold; // Number of pumpkins sold. Probably greater than the limit of byte, but definitely not greater than the limit of short.
+int counter; // this is probably sufficient for int
+long worldPopulation; // this is in the billions, so must approperiate for long
+float averageTestScore, moneyRaised, earthGravity, budget; // all examples of good times to use float
+double pi, e; // irrational constants, you may want to store as many digits as possible
+boolean lightbulbActive, seatbeltBuckled; // try not to include the word "is" in your variable name, ie. isLightbulbActive
+char letter, character, middleInitial; // most often, you should use char for 1-letter strings
+```
