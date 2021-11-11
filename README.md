@@ -10,11 +10,11 @@
   - [Naming methods `doSomething`](#naming-methods)
   - [Naming classes `MyClass`](#naming-classes)
 - [Primitives `byte short int long float double bool char`](#primitives)
-- Declaration `int counter;`
-- Initialization `bool isActive = false;`
-- Assignment `isOn = true;`
-- Strings & String methods `.trim(), .toUpperCase(), .etc`
-- Arithmetic operators `+, -, *, /, **, %, ++, --, +=, -=, *=, /=, %=`
+- [Declaration `int counter;`](#declaration)
+- [Initialization `bool isActive = false;`](#initialization)
+- [Assignment `isOn = true;`](#assignment)
+- [Strings & String methods `.trim(), .toUpperCase(), .etc`](#strings-and-string-methods)
+- [Arithmetic operators `+, -, *, /, **, %, ++, --, +=, -=, *=, /=, %=`](#arithmetic-operators)
 
 ### Getting started
 
@@ -173,3 +173,19 @@ double pi, e; // irrational constants, you may want to store as many digits as p
 boolean lightbulbActive, seatbeltBuckled; // try not to include the word "is" in your variable name, ie. isLightbulbActive
 char letter, character, middleInitial; // most often, you should use char for 1-letter strings
 ```
+
+### Initialization
+
+Initialization is when you declare a variable and assign it a value at the same time. Syntax is as follows:
+```java
+<type> <variable name> = <value>;
+```
+See ["Primitives"](#primitives) for example instantiation statements for each primitive type.
+
+### Assignment
+
+Assigning or reassigning a value to a variable. Syntax is simply:
+```java
+<variable name> = <new value>;
+```
+
