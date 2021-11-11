@@ -1,3 +1,5 @@
+At Half Hollow Hills High School East, computer club officers like myself are holding weekly sessions to accelerate the programming skills of our new members in order to prepare international competitive programming contests, local competitions, and regional hackathons. This is an a collection of review materials for topics we've covered thus far.
+
 # Lessons
 
 **Thu Nov 11 2021**
