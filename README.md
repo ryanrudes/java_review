@@ -27,6 +27,8 @@ The name of the class **MUST** be the same as the filename, ie. `Main.java` defi
 
 ### Printing to the console
 
+#### Print statements
+
 `System.out.print` prints the string to the console, without creating a new line. `System.out.println` prints the string to the console, and makes a new line. Examples:
 
 ```java
@@ -52,6 +54,13 @@ System.out.println("world!");
 >>> Hello, 
 >>> world!
 ```
+
+#### How primitives look in the console
+- `byte`, `short`, `int`, `long`: Prints the number, as is
+- `bool`: Prints either `true` or `false`. Recall that Java uses lowercase for booleans.
+- `float`: Prints whatever number was assigned to it. Recall that values will always be truncated to at most 7 decimal digits.
+- `double`: Prints whatever number was assigned to it. Recall that values will always be truncated to at most 16 decimal digits.
+- `char`: Prints the character representation, not the UTF-16 numerical representation, ie. `a` not `97`.
 
 ### Naming variables, methods, and classes
 
@@ -136,4 +145,8 @@ double e = 2.71828182845904523; // Good. Taking advantage of that extra precisio
 ```
 
 **For storing characters, we have `char`.**
-- char: 16-bit Unicode character
+- char: 16-bit Unicode character (UTF-16 is capable of encoding over 1 million, characters. See [here](https://www.fileformat.info/info/charset/UTF-16/list.htm) for a table of some of them)
+```java
+char myFavoriteLetter = 'a';
+char someCharacter = 46; // This assigns whatever character corresponds to 46 according to the 16-bit Unicode (UTF-16) system.
+```
