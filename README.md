@@ -3,7 +3,12 @@
 ## What we covered
 - [Getting started](#getting-started)
 - [Printing to the console](#printing-to-the-console)
+  - [Print statements](#print-statements)
+  - [How primitives look in the console](#how-primitives-look-in-the-console)
 - [Naming variables, methods, and classes](#naming-variables-methods-and-classes)
+  - [Naming variables](#naming-variables)
+  - [Naming methods](#naming-methods)
+  - [Naming classes](#naming-classes)
 - [Primitives](#primitives)
 - Declaration
 - Initialization
