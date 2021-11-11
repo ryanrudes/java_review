@@ -3,18 +3,18 @@
 ## What we covered
 - [Getting started](#getting-started)
 - [Printing to the console](#printing-to-the-console)
-  - [Print statements](#print-statements)
+  - [Print statements `System.out.print() & System.out.println()`](#print-statements)
   - [How primitives look in the console](#how-primitives-look-in-the-console)
 - [Naming variables, methods, and classes](#naming-variables-methods-and-classes)
-  - [Naming variables](#naming-variables)
-  - [Naming methods](#naming-methods)
-  - [Naming classes](#naming-classes)
-- [Primitives](#primitives)
-- Declaration
-- Initialization
-- Assignment
-- Strings & String methods
-- Arithmetic operators
+  - [Naming variables `numPoints`](#naming-variables)
+  - [Naming methods `doSomething`](#naming-methods)
+  - [Naming classes `MyClass`](#naming-classes)
+- [Primitives `byte short int long float double bool char`](#primitives)
+- Declaration `int counter;`
+- Initialization `bool isActive = false;`
+- Assignment `isOn = true;`
+- Strings & String methods `.trim(), .toUpperCase(), .etc`
+- Arithmetic operators `+, -, *, /, **, %, ++, --, +=, -=, *=, /=, %=`
 
 ### Getting started
 
