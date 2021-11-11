@@ -2,6 +2,8 @@
 
 ## What we covered
 - [Getting started](#getting-started)
+  - [Defining the `Main` class](#defining-the-main-class)
+  - [Basic syntax rules](#basic-syntax-rules)
 - [Printing to the console](#printing-to-the-console)
   - [Print statements `System.out.print() & System.out.println()`](#print-statements)
   - [How primitives look in the console](#how-primitives-look-in-the-console)
@@ -18,6 +20,8 @@
 
 ### Getting started
 
+#### Defining the `Main` class
+
 Java class files look something like this:
 
 ```java
@@ -29,6 +33,11 @@ public class Main {
 ```
 
 The name of the class **MUST** be the same as the filename, ie. `Main.java` defines the class `Main`.
+
+#### Basic syntax rules
+- Statements end in semicolons
+- Variable names can begin in dollar signs, underscores, or letters. They cannot include dollar signs or underscores anywhere else. The can include numbers, but not at the beginning.
+- In Java, whitespace does **NOT** matter
 
 ### Printing to the console
 
@@ -214,7 +223,7 @@ System.out.println(prod);
 
 Operators ending in `=` first compute the output, then reassign it to the variable at the beginning of the statement, for instance:
 ```java
-int x = 2
+int x = 2;
 x += 3;
 System.out.println(x);
 >>> 5
