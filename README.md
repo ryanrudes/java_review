@@ -189,3 +189,52 @@ Assigning or reassigning a value to a variable. Syntax is simply:
 <variable name> = <new value>;
 ```
 
+### Strings and string methods
+
+W.I.P.
+
+### Arithmetic operators
+
+**Unary** operators have only one input, ie.
+```java
+int counter = 0;
+counter++;
+System.out.println(counter);
+>>> 1
+```
+
+**Binary** operators have two inputs, ie.
+```java
+int x = 2;
+int y = 4;
+int prod = x * y;
+System.out.println(prod);
+>>> 8
+```
+
+Operators ending in `=` first compute the output, then reassign it to the variable at the beginning of the statement, for instance:
+```java
+int x = 2
+x += 3;
+System.out.println(x);
+>>> 5
+```
+
+Operators **NOT** ending in `=` simply compute the value and give that output. These are used in arithmetic expressions such as `(3 * 4 - (5 % 3))`
+
+Here's a list of the most common operators and their function:
+
+- `+`: addition; `3 + 2 = 5`
+- `-`: subtraction; `3 - 2 = 1`
+- `*`: multiplication; `3 * 2 = 6`
+- `/`: division; `4 / 2 = 2`
+- `**`: exponentiation/power; `4 ** 2 = 16`
+- `%`: modulus/remainder; `5 % 2 = 1`
+- `++`: increase by 1 (this is a unary operator)
+- `--`: decrement by 1 (this is a unary operator)
+- `+=`: increase by some value (this is the binary version of `++`)
+- `-=`: decrease by some value (this is the binary version of `--`)
+- `*=`: multiply by some value
+- `/=`: divide by some value
+- `%=`: remainder with some value
+- `**=`: to the power of some value
