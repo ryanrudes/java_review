@@ -8,6 +8,7 @@
 - [Conditional Expressions and Conditional Statements](#conditional-expressions-and-conditional-statements)
   - [If-Else Statement (`if`, `else if`, `else`)](#if-else-statement)
   - [Switch Case (`switch`, `case`, `default`)](#switch-case)
+- [Type Casting](#type-casting)
 
 ### Logical Operators
 Here's a list of the logical operators we have covered so far:
@@ -177,3 +178,28 @@ The other key similarities/differences between if-else and switch are as follows
 - Switch statements use colons (`:`) to separate cases, whereas if-else uses curly braces (`{}`)
 - Switch statements have an optional `break` keyword. But **be careful**, as omitting the `break` keyword will cause execution to continue on into the next case, **even if it already found a prior case to be true and executed code accordingly**. By ommitting the `break` keyword, the switch case can potentially execute multiple cases. You will typically want the `break` keyword to end each `case`, except `default`, for which it doesn't matter since this is always the last case. We will revisit the `break` keyword when we get into loops.
 - If-else has the `else` keyword, while switch case has the `default` keyword. These are both optional, and they are for executing code when none of the prior conditions were satisfied. You must be careful if you choose to omit them from if-else or switch statements.
+
+### Type Casting
+
+Recall how we have many different primitive types in java for storing various-sized quantities with different amounts of precision. Each primitive type has its own numerical limits, and a precision limit.
+
+In order of least to greatest capacity & precision, the primitives are as follows (even though `float` takes up half the space of `int`, it is considered a wider primitive because it is a floating-point type, ie. it can store digits after the decimal):
+
+```java
+// byte - stores 1 byte (8 bits) and doesn't store any digits after the decimal
+// char - stores 2 bytes (16 bits) and doesn't store any digits after the decimal
+// short - stores 2 bytes (16 bits) and doesn't store any digits after the decimal
+// int - stores 4 bytes (32 bits) and doesn't store any digits after the decimal
+// long - stores 8 bytes (64 bits) and doesn't store any digits after the decimal
+// float - stores 4 bytes (32 bits) and truncates at 7 digits after the decimal
+// double - stores 8 bytes (64 bits0 and truncates at 15 digits after the decimal.
+```
+
+Since each primitive type varies in its capacity & precision, we need to be careful when working with variables of different types to avoid these two kinds of logical errors:
+- Numerical Overflow: occurs when the value of a variable exceeds the bounds permitted by its type, causing the value to cycle back around to the opposite sign. For instance, if an integer variable exceeds the maximum value `int` can store, it changes to the minimum value, ie. some large negative number.
+- Rounding Errors: Since the number of bits we can use to represent a decimal value is always finite, we have to set some limits upon the precision. `float` can store 7 digits after the decimal, while `double` can store 15. For this reason, is would be a bad assumption to assume the behavior of these primitive types is identical to how you might treat, say, rational numbers in mathematics. For instance, consider this:
+```java
+float x = 1f;
+float y = 3f;
+System.out.println((x / y) * y); // Prints "0.9999999"
+```
