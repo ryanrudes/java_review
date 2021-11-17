@@ -203,3 +203,31 @@ float x = 1f;
 float y = 3f;
 System.out.println((x / y) * y); // Prints "0.9999999"
 ```
+
+There are two types of type casting, **widening casting**, which is done **automatically** by Java, and **narrowing casting**, which must be done manually. Widening casting occurs when a type is casted onto a type with greater precision (refer back to the order of precision for the primitive types). Narrowing casting is when the opposite occurs, a value with a more precise type is manually casted onto a less precise type.
+
+Here's an example of automatic widening casting:
+```java
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt;        // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+```
+
+And here's an example of manual narrowing casting:
+```java
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78d;
+    int myInt = (int) myDouble;     // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
+```
