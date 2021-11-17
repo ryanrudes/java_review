@@ -134,7 +134,7 @@ if (grade >= 95) {
 }
 ```
 
-#### Switch Case (`switch`, `case`, `default`)
+#### Switch Case
 
 An if-then-else statement can test expressions based on conditions involving a *range of values*, for instance:
 
