@@ -32,7 +32,7 @@ false && true // this is false
 false && false // this is false
 ```
 
-#### **OR** Operator (`||`)
+#### **OR** Operator
 
 The **OR** operator (`||`) returns `true` if *either* condition is true. Therefore, it is sufficient for just one of the conditions to be true, whereas the **AND** operator requires both to be true.
 
@@ -61,7 +61,7 @@ There are still several more operators that we have yet to cover, we'll learn mo
 
 ### Conditional Expressions and Conditional Statements
 
-#### If-Else Statement (`if`, `else if`, `else`)
+#### If-Else Statement
 
 **The if-then Statement (`if`)**
 
