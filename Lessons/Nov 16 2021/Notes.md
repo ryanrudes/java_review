@@ -5,7 +5,7 @@
   - [**AND** Operator `&&`](#and-operator)
   - [**OR** Operator `||`](#or-operator)
   - [Operator Precedence](#operator-precedence)
-- [Conditional Expressions and Conditional Etatements](#conditional-expressions-and-conditional-statements)
+- [Conditional Expressions and Conditional Statements](#conditional-expressions-and-conditional-statements)
   - [If-Else Statement (`if`, `else if`, `else`)](#if-else-statement)
   - [Switch Case (`switch`, `case`, `default`)](#switch-case)
 
