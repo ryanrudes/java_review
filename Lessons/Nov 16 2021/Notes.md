@@ -1,7 +1,7 @@
 # Tue Nov 16 2021
 
 ## What we covered
-- [Logical operators `== != > >= < <= ! && || ?:`](#logical-operators)
+- [Logical operators `== != > >= < <= ! && ||`](#logical-operators)
   - [**AND** Operator `&&`](#and-operator)
   - [**OR** Operator `||`](#or-operator)
   - [Operator Precedence](#operator-precedence)
