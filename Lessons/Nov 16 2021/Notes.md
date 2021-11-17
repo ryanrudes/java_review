@@ -1,13 +1,13 @@
 # Tue Nov 16 2021
 
 ## What we covered
-- [Logical operators `== != > >= < <= ! && || ?:`](logical-operators)
-  - [**AND** Operator `&&`](and-operator)
-  - [**OR** Operator `||`](or-operator)
-  - [Operator Precedence](operator-precedence)
-- [Conditional Expressions and Conditional Etatements](conditional-expressions-and-conditional-statements)
-  - [If-Else Statement (`if`, `else if`, `else`)](if-else-statement)
-  - [Switch Case (`switch`, `case`, `default`)](switch-case)
+- [Logical operators `== != > >= < <= ! && || ?:`](#logical-operators)
+  - [**AND** Operator `&&`](#and-operator)
+  - [**OR** Operator `||`](#or-operator)
+  - [Operator Precedence](#operator-precedence)
+- [Conditional Expressions and Conditional Etatements](#conditional-expressions-and-conditional-statements)
+  - [If-Else Statement (`if`, `else if`, `else`)](#if-else-statement)
+  - [Switch Case (`switch`, `case`, `default`)](#switch-case)
 
 ### Logical Operators
 Here's a list of the logical operators we have covered so far:
