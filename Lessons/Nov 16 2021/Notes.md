@@ -135,3 +135,45 @@ if (grade >= 95) {
 ```
 
 #### Switch Case (`switch`, `case`, `default`)
+
+An if-then-else statement can test expressions based on conditions involving a *range of values*, for instance:
+
+> Is `x` greater than or equal to 5? \
+> If so, do this.
+> Otherwise, is it greater than 3? \
+> If so, do this instead. \
+> Otherwise, do something else.
+
+Whereas a switch statement tests expressions based solely on a single integer, enumerated value, or String object. It is a condenced and more readable way of implementing an if-then-else statement for situations like this:
+
+**Context**: Let's say your have an object you created (most likely an enum), that describes the cloud cover. It can take on any of these values:
+- Clear
+- Partly Cloudy
+- Moderately Cloudy
+- Mostly Cloudy
+
+You could you a switch statement for a situation like this. Note that we can omit the `default` case **only because** our enum can **only** take on these four values, so it would be impossible for none of these cases to be satisfied.
+
+```java
+switch (cloudCover) {
+  case .clear:
+    System.out.println("It is clear outside.");
+    break;
+  case .partlyCloudy:
+    System.out.println("It is partly cloudy.");
+    break;
+  case .moderatelyCloudy:
+    System.out.println("It is moderately cloudy.");
+    break;
+  case .mostlyCloudy:
+    System.out.println("It is mostly cloudy.");
+    break;
+}
+```
+
+Switch statements are **NOT** applicable for situations involving conditional operators such as `>`, `>=`, `<`, `<=`, and the like. It is only for condensing if-then-else statements involving equalities.
+
+The other key similarities/differences between if-else and switch are as follows:
+- Switch statements use colons (`:`) to separate cases, whereas if-else uses curly braces (`{}`)
+- Switch statements have an optional `break` keyword. But **be careful**, as omitting the `break` keyword will cause execution to continue on into the next case, **even if it already found a prior case to be true and executed code accordingly**. By ommitting the `break` keyword, the switch case can potentially execute multiple cases. You will typically want the `break` keyword to end each `case`, except `default`, for which it doesn't matter since this is always the last case. We will revisit the `break` keyword when we get into loops.
+- If-else has the `else` keyword, while switch case has the `default` keyword. These are both optional, and they are for executing code when none of the prior conditions were satisfied. You must be careful if you choose to omit them from if-else or switch statements.
