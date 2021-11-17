@@ -21,7 +21,7 @@ Here's a list of the logical operators we have covered so far:
 - `&&`: **AND** operator
 - `||`: **OR** operator
 
-#### **AND** Operator (`&&`)
+#### **AND** Operator
 
 The **AND** operator (`&&`) returns `true` **only if** both conditions are true.
 
