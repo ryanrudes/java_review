@@ -140,7 +140,7 @@ if (grade >= 95) {
 An if-then-else statement can test expressions based on conditions involving a *range of values*, for instance:
 
 > Is `x` greater than or equal to 5? \
-> If so, do this.
+> If so, do this. \
 > Otherwise, is it greater than 3? \
 > If so, do this instead. \
 > Otherwise, do something else.
