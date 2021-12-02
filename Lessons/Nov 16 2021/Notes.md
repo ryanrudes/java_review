@@ -145,28 +145,22 @@ An if-then-else statement can test expressions based on conditions involving a *
 > If so, do this instead. \
 > Otherwise, do something else.
 
-Whereas a switch statement tests expressions based solely on a single integer, enumerated value, or String object. It is a condenced and more readable way of implementing an if-then-else statement for situations like this:
+Whereas a switch statement tests expressions based solely on a single integer, enumerated value, or String object. It is a condenced and more readable way of implementing an if-then-else statement for certain situations.
 
-**Context**: Let's say your have an object you created (most likely an enum), that describes the cloud cover. It can take on any of these values:
-- Clear
-- Partly Cloudy
-- Moderately Cloudy
-- Mostly Cloudy
-
-You could you a switch statement for a situation like this. Note that we can omit the `default` case **only because** our enum can **only** take on these four values, so it would be impossible for none of these cases to be satisfied.
+You could you a switch statement for a situation like this. Note that we can omit the `default` case **only because** we are assuming `cloudCover` can **only** take on these four values, so it would be impossible for none of these cases to be satisfied.
 
 ```java
 switch (cloudCover) {
-  case .clear:
+  case "Clear":
     System.out.println("It is clear outside.");
     break;
-  case .partlyCloudy:
+  case "Partly Cloudy":
     System.out.println("It is partly cloudy.");
     break;
-  case .moderatelyCloudy:
+  case "Moderately Cloudy":
     System.out.println("It is moderately cloudy.");
     break;
-  case .mostlyCloudy:
+  case "Mostly Cloudy":
     System.out.println("It is mostly cloudy.");
     break;
 }
