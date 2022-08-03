@@ -186,7 +186,7 @@ In order of least to greatest capacity & precision, the primitives are as follow
 // int - stores 4 bytes (32 bits) and doesn't store any digits after the decimal
 // long - stores 8 bytes (64 bits) and doesn't store any digits after the decimal
 // float - stores 4 bytes (32 bits) and truncates at 7 digits after the decimal
-// double - stores 8 bytes (64 bits0 and truncates at 15 digits after the decimal.
+// double - stores 8 bytes (64 bits) and truncates at 15 digits after the decimal.
 ```
 
 Since each primitive type varies in its capacity & precision, we need to be careful when working with variables of different types to avoid these two kinds of logical errors:
